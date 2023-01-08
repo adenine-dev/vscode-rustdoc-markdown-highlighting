@@ -1,0 +1,25 @@
+{
+  "name": "vscode-rustdoc-markdown-highlighting",
+  "displayName": "vscode-rustdoc-markdown-highlighting",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "",
+      "aliases": ["", ""],
+      "extensions": [""],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "",
+      "scopeName": "",
+      "path": "./syntaxes/.tmLanguage.json"
+    }]
+  }
+}
