@@ -6,20 +6,21 @@
   "engines": {
     "vscode": "^1.74.0"
   },
+  "repository": {
+    "url": "https://github.com/adenine-dev/vscode-rustdoc-markdown-highlighting"
+  },
   "categories": [
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "",
-      "aliases": ["", ""],
-      "extensions": [""],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "",
-      "scopeName": "",
-      "path": "./syntaxes/.tmLanguage.json"
-    }]
+    "grammars": [
+      {
+        "path": "./syntaxes/rustdoc.rust.injection.tmLanguage.json",
+        "scopeName": "rustdoc.markdown.injection",
+        "injectTo": [
+          "source.rust"
+        ]
+      }
+    ]
   }
 }
